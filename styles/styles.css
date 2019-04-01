@@ -48,6 +48,7 @@ body{
 
 .video-description{
 	font-size: 10px;
+	color: #959595;
 }
 
 .bio{
@@ -56,7 +57,7 @@ body{
 }
 
 .aboutme{
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: bold;
 	color: black;
 	background-color: #FEDCEE;
@@ -66,8 +67,8 @@ body{
 }
 
 .profile-pic{
-	height: 170px;
-	width: 170px;
+	height: 155px;
+	width: 155px;
 	border-radius: 100%;
 	margin-bottom: 15px;
 }
@@ -84,10 +85,94 @@ aside p{
 }
 
 .pinksquare-button{
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: bold;
+	color: black;
 	background-color: #FEDCEE;
 	width: 270px;
 	padding: 5px 0;
 	display: inline-block;
+}
+
+/*seccion recetas*/
+
+.round-image{
+	width: 250px;
+	height: 166px;
+	border-radius: 15%;
+}
+
+.index-recipe{
+	border-top: 2px solid #f1f1f1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 25px 0;
+	max-width: 65%
+}
+
+.recipe{
+	padding-left: 25px;
+}
+
+.date-social, .indexrecipe-text{
+	color: #959595;
+	font-size: 11px;
+}
+
+.date-social{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.date-social p{
+	display: inline-block;
+}
+
+.date-social a{
+	float: right;
+	text-align: center;
+	color: #959595;
+}
+
+.date-social a i{
+	margin-left: 10px;
+}
+
+.indexrecipe-title{
+	margin-left: 8px;
+	font-weight: bold;
+}
+
+.indexrecipe-text{
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.recipe-button{
+	color: black;
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #FEDCEE;
+	padding: 5px 23px;
+	border-radius: 5px;
+}
+/*sección social media*/
+
+.socialmedia-footer{
+	margin-top: 50px;
+	border-bottom: 2px solid #f1f1f1;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+	padding-bottom: 40px;
+	font-size: 12px;
+}
+
+.socialmedia-footer a{
+	color: #959595;
+}
+
+.socialmedia-footer a span{
+	margin-left: 10px;
 }
