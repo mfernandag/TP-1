@@ -18,5 +18,86 @@ time, mark, audio, video {
 	font: inherit;
   vertical-align: baseline;
   list-style: none;
-  text-decoration: none
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: white;
+  font-family:"IBM Plex Mono", monospace;
+}
+header{
+  margin: 50px 0 5px;
+  width: 100%;
+  text-align: center;
+
+}
+.main-title{
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
+  color: #D2691E;
+  font-weight: bold;
+
+}
+.menu-list > li{
+display: inline-block;
+
+}
+
+.menu-list > li > a{
+  display: block;
+  padding: 15px 30px 0 30px;
+  color:#696969;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu-list > li.home > a{
+
+  color: #D2691E;
+}
+
+.menu-list > li.home > a:hover{ 
+
+  color:#696969;
+}
+    
+.menu-list > li > a:hover{ 
+  color: #D2691E;
+  transition: all 0.3s;
+}
+
+.menu-list > li.meals > a{
+  position: relative;
+}
+.meals-list{
+  position: absolute;
+  background: white;
+  padding: 5px 10px;
+  font-variant: normal;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+.menu-list li:hover .meals-list{
+visibility: visible;
+opacity: 1 ;
+}
+.meals-list > li > a{
+  color:#696969;
+}
+.meals-list > li > a:hover{
+  color: #D2691E;
+  transition: all 0.3s;
+}
+div.banner{
+	display:block;
+	width:100%;
+	height:250px;
+	background: url("../images/banner.jpg") no-repeat center bottom;
+	background-size:cover;
+
 }
