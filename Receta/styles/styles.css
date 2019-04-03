@@ -4,7 +4,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol, li, ul,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -16,7 +16,200 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-  vertical-align: baseline;
-  list-style: none;
-  text-decoration: none
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none
 }
+
+body{
+	font-family: "IBM Plex Mono", monospace;
+	font-size: 14px;
+	color: #959595;
+}
+
+/*menu izquierda receta*/
+
+.container{
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 1100px;
+}
+
+.singlepost-menu{
+	padding-top: 20px; 
+	padding-bottom: 70px;
+}
+
+.singlepost-menu i, a, span{
+	color: black;
+}
+
+.singlepost-menu a, span{
+	font-weight: bold;
+}
+
+.post-name{
+	font-weight: normal;
+	color: #959595;
+}
+
+/*receta*/
+
+.recipe-page{
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 600px;
+	display: flex;
+	flex-direction: row;
+}
+
+.socialmedia-icons{
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+	font-size: 18px;
+	justify-content: center;
+	max-height: 320px;
+
+}
+
+.socialmedia-icons a{
+	color: white;
+	border-radius: 100%;
+	text-align: center;
+	width: 15px;
+	height: 15px;
+	padding: 5px;
+	margin-bottom: 15px;
+	line-height: 15px;
+}
+
+
+.facebook{
+	background-color: #3b5998;
+}
+
+.twitter{
+	background-color: #00aced;
+}
+
+.google{
+	background-color: #d34836;
+}
+
+.instagram{
+	background-color: #744d26;
+}
+
+.pinterest{
+	background-color: #c8232c;
+}
+
+.recipe-image{
+	width: 500px;
+	height: 320px;
+	border-radius: 25px;
+}
+
+.recipe{
+	font-size: 12px;
+	margin-bottom: 50px;
+}
+
+.recipe-post{
+	max-width: 500px;
+}
+
+.recipe-intro{
+	margin-top: 25px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.recipe-intro p{
+	display: inline-block;
+}
+
+.recipe-intro a{
+	float: right;
+	text-align: center;
+	color: #959595;
+}
+
+.recipe-intro a i{
+	margin-left: 10px;
+}
+
+.recipe-title{
+	margin-left: 8px;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+}
+
+.recipe-text{
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+blockquote {
+	border-left: 1px solid #E74333;
+	margin-bottom: 20px;
+}
+
+blockquote p, cite{
+	padding-left: 15px;
+}
+
+blockquote p{
+	font-weight: bold;
+	color: black;
+	padding-bottom: 20px;
+}
+
+blockquote cite{
+	display: block;
+}
+
+.ingredients-list{
+	padding: 0;
+}
+
+.ingredients-list li{
+	line-height: 22px;
+}
+
+.ingredients-list li::before {
+	content: "\2022";
+	color: #E74333;
+	font-weight: bold;
+	display: inline-block;
+	width: 5px;
+	margin-right: 10px;
+  }
+
+
+
+
+/*social media footer */
+
+.socialmedia-footer{
+	margin-top: 50px;
+	border-bottom: 2px solid #f1f1f1;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+	padding-bottom: 40px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.socialmedia-footer a{
+	color: #959595;
+}
+
+.socialmedia-footer a span{
+	margin-left: 10px;
+	color: #959595;
+}
+
