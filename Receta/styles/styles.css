@@ -16,15 +16,15 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-    vertical-align: baseline;
-    list-style: none;
-    text-decoration: none
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none
 }
 
 body{
 	font-family: "IBM Plex Mono", monospace;
 	font-size: 14px;
-	color: #959595;
+	color: #848081;
 }
 
 /*menu izquierda receta*/
@@ -32,7 +32,7 @@ body{
 .container{
 	margin: 0 auto;
 	overflow: hidden;
-	max-width: 1100px;
+	max-width: 1000px;
 }
 
 .singlepost-menu{
@@ -50,7 +50,7 @@ body{
 
 .post-name{
 	font-weight: normal;
-	color: #959595;
+	color: #848081;
 }
 
 /*receta*/
@@ -70,7 +70,6 @@ body{
 	font-size: 18px;
 	justify-content: center;
 	max-height: 320px;
-
 }
 
 .socialmedia-icons a{
@@ -98,7 +97,7 @@ body{
 }
 
 .instagram{
-	background-color: #744d26;
+	background-color: #8F6247; 
 }
 
 .pinterest{
@@ -113,7 +112,7 @@ body{
 
 .recipe{
 	font-size: 12px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 .recipe-post{
@@ -153,7 +152,7 @@ body{
 }
 
 blockquote {
-	border-left: 1px solid #E74333;
+	border-left: 1px solid #FC774E;
 	margin-bottom: 20px;
 }
 
@@ -181,14 +180,12 @@ blockquote cite{
 
 .ingredients-list li::before {
 	content: "\2022";
-	color: #E74333;
+	color: #FC774E;
 	font-weight: bold;
 	display: inline-block;
 	width: 5px;
 	margin-right: 10px;
   }
-
-
 
 
 /*social media footer */
