@@ -16,9 +16,9 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-  vertical-align: baseline;
-  list-style: none;
-  text-decoration: none
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none
 }
 
 body{
@@ -94,7 +94,18 @@ aside p{
 	display: inline-block;
 }
 
+.aboutme:hover, .pinksquare-button:hover, .recipe-button:hover{
+	background-color: #fccfc2;
+}
+
 /*seccion recetas*/
+
+.index-recipes{
+	max-width: 610px;
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 900px;
+}
 
 .round-image{
 	width: 250px;
