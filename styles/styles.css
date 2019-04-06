@@ -28,6 +28,7 @@ body{
   background-color: white;
   font-family:"IBM Plex Mono", monospace;
 }
+
 header{
   margin: 50px 0 5px;
   width: 100%;
@@ -37,7 +38,7 @@ header{
 .main-title{
   font-family: "Indie Flower", cursive;
   font-size: 50px;
-  color: #D2691E;
+  color: #fa7855;
   font-weight: bold;
 
 }
@@ -46,9 +47,10 @@ display: inline-block;
 
 }
 
+
 .menu-list > li > a{
   display: block;
-  padding: 15px 30px 0 30px;
+  padding: 15px 30px 1px 30px;
   color:#696969;
   font-variant: small-caps;
   font-weight: bold;
@@ -56,7 +58,7 @@ display: inline-block;
 }
 .menu-list > li.home > a{
 
-  color: #D2691E;
+  color: #fa7855;
 }
 
 .menu-list > li.home > a:hover{ 
@@ -65,7 +67,7 @@ display: inline-block;
 }
     
 .menu-list > li > a:hover{ 
-  color: #D2691E;
+  color: #fa7855;
   transition: all 0.3s;
 }
 
@@ -75,7 +77,7 @@ display: inline-block;
 .meals-list{
   position: absolute;
   background: white;
-  padding: 5px 10px;
+  padding: 5px 10px 10px;
   font-variant: normal;
   display: block;
   visibility: hidden;
@@ -90,73 +92,84 @@ opacity: 1 ;
   color:#696969;
 }
 .meals-list > li > a:hover{
-  color: #D2691E;
+  color:#fa7855;
   transition: all 0.3s;
-}
 
-.content, .master{
+}
+.fa-caret-down{
+  font-size: 8px;
+  font-weight: bold;
+  color:#696969;
+
+
+}
+.carrousel{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+  overflow: hidden;
+  }
 
-}
-
-.box1, .box2, .box3, .box4{
+.carrousel-item1, .carrousel-item2, .carrousel-item3, .carrousel-item4{
   width: 24%;
-  height: 400px;
+  height:400px;
 }
-.box1{
+.carrousel-item1{
   background: url("../images/img-1.jpg") no-repeat center bottom;
   background-size:cover;
 }
-.box2{
+.carrousel-item2{
   background: url("../images/img-2.jpg") no-repeat center bottom;
   background-size:cover;
 }
-.box3{
+.carrousel-item3{
   background: url("../images/img-3.jpg") no-repeat center bottom;
   background-size:cover;
 }
-.box4{
+.carrousel-item4{
   background: url("../images/img-4.jpg") no-repeat center bottom;
   background-size:cover;
   position: relative;
+  overflow: hidden;
 }
-.box4 .caption{
+.carrousel-item4 .caption{
   position: absolute;
   margin-top:300px;
   width: 100%;
   height:100px;
-  background-color: #D2691E;
+  background-color:#fa7855 ;
   opacity: 0.5;
- visibility: hidden;
  transition: all 0.3s;
   font-size: 14px;
   color: white;
   padding: 20px 10px ;
+  bottom: -150px;
+}
   
+
+.carrousel-item4:hover .caption{
+  bottom:0px;
   
 }
-.box4:hover .caption{
-  visibility: visible;
-  
-  
-}
-.caption p.date, p.review{
+.caption p.date{
   display:inline;
   font-size: 10px;
   text-align: left;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.caption p.date{
-  border-block-end-style: solid white 1px;
+
 }
 .caption p.description{
   padding-top: 10px;
 
 }
+.master{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  }
 .master{
   width: 80%;
   margin: 40px auto;
@@ -167,16 +180,17 @@ opacity: 1 ;
   height:200px;
   border-radius:16px;
   position:relative;
-  visibility: hidden;
+  visibility: visible;
 
 }
 .box5:hover, .box6:hover, .box7:hover{
-  visibility: visible;
+  visibility: hidden;
+  transition: all 0.3s;
 }
 .master a.button{
   position: absolute;
   padding: 5px 45px;
-  background-color:#D2691E;
+  background-color:white;
   border-radius: 8px;
   color:black;
   text-align: center;
@@ -186,7 +200,8 @@ opacity: 1 ;
   visibility: visible;
 }
 .master a.button:hover{
-  background-color:white;
+  background-color:#fa7855;
+  transition: all 0.3s;
 }
 
 .box5{

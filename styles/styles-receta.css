@@ -37,7 +37,7 @@ header{
 .main-title{
   font-family: "Indie Flower", cursive;
   font-size: 50px;
-  color: #D2691E;
+  color:#fa7855;
   font-weight: bold;
 
 }
@@ -56,7 +56,7 @@ display: inline-block;
 }
 .menu-list > li.home > a{
 
-  color: #D2691E;
+  color: #fa7855;
 }
 
 .menu-list > li.home > a:hover{ 
@@ -65,7 +65,7 @@ display: inline-block;
 }
     
 .menu-list > li > a:hover{ 
-  color: #D2691E;
+  color:#fa7855;
   transition: all 0.3s;
 }
 
@@ -90,7 +90,7 @@ opacity: 1 ;
   color:#696969;
 }
 .meals-list > li > a:hover{
-  color: #D2691E;
+  color: #fa7855;
   transition: all 0.3s;
 }
 div.banner{
