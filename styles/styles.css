@@ -98,6 +98,20 @@ aside p{
 	background-color: #fccfc2;
 }
 
+.fa-heart:hover{
+	color: #cc0000;
+	font-weight: bold;
+}
+
+.fa-comments:hover{
+	color: #000099;
+	font-weight: bold;
+}
+
+.fa-share-alt:hover{
+	color: black;
+}
+
 /*seccion recetas*/
 
 .index-recipes{
@@ -114,7 +128,7 @@ aside p{
 }
 
 .index-recipe{
-	border-top: 2px solid #f1f1f1;
+	border-top: 1px solid #d8d8d8;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -172,12 +186,13 @@ aside p{
 
 .socialmedia-footer{
 	margin-top: 50px;
-	border-bottom: 2px solid #f1f1f1;
+	border-bottom: 1px solid #d8d8d8;
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 50px;
 	padding-bottom: 40px;
 	font-size: 12px;
+	align-items: center;
 }
 
 .socialmedia-footer a{
@@ -186,4 +201,10 @@ aside p{
 
 .socialmedia-footer a span{
 	margin-left: 10px;
+}
+
+.socialmedia-footer a:hover{
+	color: #4c4c4c;
+	font-weight: bold;
+	font-size: 14px;
 }

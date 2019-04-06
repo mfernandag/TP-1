@@ -16,9 +16,9 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-  vertical-align: baseline;
-  list-style: none;
-  text-decoration: none
+   vertical-align: baseline;
+   list-style: none;
+   text-decoration: none
 }
 
 body{
@@ -40,17 +40,23 @@ body{
 	padding-bottom: 70px;
 }
 
-.singlepost-menu i, a, span{
+
+.singlepost-menu i, a, .left-menu{
 	color: black;
+	
 }
 
-.singlepost-menu a, span{
-	font-weight: bold;
+.singlepost-menu a, .left-menu, .span-menu{
+	font-weight: bold;	
 }
 
 .post-name{
 	font-weight: normal;
 	color: #848081;
+}
+
+.singlepost-menu .bold-link:hover>i, .left-menu:hover, .bold-link:hover{
+	color: #FC774E;
 }
 
 /*receta*/
@@ -178,35 +184,60 @@ blockquote cite{
 	line-height: 22px;
 }
 
-.ingredients-list li::before {
+.ingredients-list li::before{
 	content: "\2022";
 	color: #FC774E;
 	font-weight: bold;
 	display: inline-block;
 	width: 5px;
 	margin-right: 10px;
-  }
+}
 
+.socialmedia-icons a:hover{
+	width: 17px;
+	height: 17px;
+	padding: 7px;
+	margin-bottom: 17px;
+	line-height: 17px;
+}
+
+.fa-heart:hover{
+	color: #cc0000;
+	font-weight: bold;
+}
+
+.fa-comments:hover{
+	color: #000099;
+	font-weight: bold;
+}
+
+.fa-share-alt:hover{
+	color: black;
+}
 
 /*social media footer */
 
 .socialmedia-footer{
 	margin-top: 50px;
-	border-bottom: 2px solid #f1f1f1;
+	border-bottom: 1px solid #d8d8d8;
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 50px;
 	padding-bottom: 40px;
 	font-size: 12px;
-	font-weight: normal;
+	align-items: center;
 }
 
 .socialmedia-footer a{
-	color: #959595;
+	color: #808080;
 }
 
 .socialmedia-footer a span{
 	margin-left: 10px;
-	color: #959595;
 }
 
+.socialmedia-footer a:hover{
+	color: #4c4c4c;
+	font-weight: bold;
+	font-size: 14px;
+}
