@@ -42,8 +42,9 @@ header{
   font-weight: bold;
 
 }
+
 .menu-list > li{
-display: inline-block;
+  display: inline-block;
 
 }
 
@@ -96,127 +97,116 @@ opacity: 1 ;
   transition: all 0.3s;
 
 }
-.fa-caret-down{
-  font-size: 8px;
-  font-weight: bold;
-  color:#696969;
-
-
-}
-.carrousel{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-  }
-
-.carrousel-item1, .carrousel-item2, .carrousel-item3, .carrousel-item4{
-  width: 24%;
-  height:400px;
-}
-.carrousel-item1{
-  background: url("../images/img-1.jpg") no-repeat center bottom;
-  background-size:cover;
-}
-.carrousel-item2{
-  background: url("../images/img-2.jpg") no-repeat center bottom;
-  background-size:cover;
-}
-.carrousel-item3{
-  background: url("../images/img-3.jpg") no-repeat center bottom;
-  background-size:cover;
-}
-.carrousel-item4{
-  background: url("../images/img-4.jpg") no-repeat center bottom;
-  background-size:cover;
-  position: relative;
-  overflow: hidden;
-}
-.carrousel-item4 .caption{
-  position: absolute;
-  margin-top:300px;
-  width: 100%;
-  height:100px;
-  background-color:#fa7855 ;
-  opacity: 0.5;
- transition: all 0.3s;
+span i{
+  padding-left:8px;
   font-size: 14px;
-  color: white;
-  padding: 20px 10px ;
-  bottom: -150px;
-}
-  
-
-.carrousel-item4:hover .caption{
-  bottom:0px;
   
 }
-.caption p.date{
-  display:inline;
-  font-size: 10px;
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-}
-.caption p.description{
-  padding-top: 10px;
-
-}
-.master{
+.carrousel, .content{
+  width:100% ;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   overflow: hidden;
+  margin:0;
+  
+
   }
-.master{
-  width: 80%;
-  margin: 40px auto;
+  .carrousel-item1, .carrousel-item2, .carrousel-item3, .carrousel-item4{
+   width: 24%;
+    margin: 0 0,5%;
+  }
+  .carrousel img{
+      width:100% ;
+  }
+  .carrousel-item4, .carrousel-item3{
+    position: relative;
+    overflow: hidden;
+  }
+  .carrousel-item4 .caption, .carrousel-item3 .caption{
+    position: absolute;
+    margin-top:75%;
+    width:100%;
+    height:25%;
+    background-color:#fa7855 ;
+    opacity: 0.5;
+   transition: all 0.3s;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 20px 10px ;
+    bottom:-50%;
+    overflow: hidden;
+    font-variant: small-caps;
+  }
+   
+  .carrousel-item3 .caption{
+    color: #800000;
+    background-color:#A9A9A9;
+    
+  }
   
-}
-.box5, .box6, .box7{
-  width: 32%;
-  height:200px;
-  border-radius:16px;
-  position:relative;
-  visibility: visible;
-
-}
-.box5:hover, .box6:hover, .box7:hover{
-  visibility: hidden;
-  transition: all 0.3s;
-}
-.master a.button{
-  position: absolute;
-  padding: 5px 45px;
-  background-color:white;
-  border-radius: 8px;
-  color:black;
-  text-align: center;
-  font-size: 16px;
-  justify-content: center;
-  margin: 92px ;
-  visibility: visible;
-}
-.master a.button:hover{
-  background-color:#fa7855;
-  transition: all 0.3s;
-}
-
-.box5{
-  background: url("../images/platos.jpeg") no-repeat center bottom;
-  background-size:cover;
+  .carrousel-item4:hover .caption,.carrousel-item3:hover .caption {
+    bottom:4px;
+    
+  }
+  .caption p.date{
+    display:inline;
+    font-size: 10px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom:16px;
+  }
   
-}
-.box6{
-  background: url("../images/recetas.jpg") no-repeat center bottom;
-  background-size:cover;
   
-}
-.box7{
-  background: url("../images/exoticos.JPG") no-repeat center bottom;
-  background-size:cover;
+  .caption p.description{
+    padding-top: 10px;
   
-}
-
+  }
+  
+  .content{
+    width: 80%;
+    margin: 40px auto;
+    
+  }
+  .content img{
+    border-radius:16px;
+    width:100%;
+    overflow: hidden;
+    }
+  .content-item1, .content-item2, .content-item3{
+    max-width: 32%;
+    visibility: visible;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    }
+    .content-item1:hover, .content-item2:hover, .content-item3:hover{
+      visibility: hidden;
+      transition: all 0.3s;
+    }
+  
+  
+  .content a.button{
+    position: absolute;
+    padding: 5px 45px;
+    background-color:white;
+    border-radius: 16px;
+    color:black;
+    text-align: center;
+    font-size: 16px;
+    justify-content: center;
+    visibility: visible;
+    margin-inline-start:25%;
+    width:50%;
+  }
+  .content a.button:hover{
+    background-color:#fa7855;
+    transition: all 0.3s;
+  }
+  
+  
+  
+  
