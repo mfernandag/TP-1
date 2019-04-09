@@ -30,32 +30,40 @@ body{
 }
 
 header{
-  margin: 50px 0 5px;
+  margin:20px 0 0;
   width: 100%;
   text-align: center;
+  height: auto;
 
 }
 .main-title{
-  font-family: "Indie Flower", cursive;
+   font-family: "Indie Flower", cursive;
   font-size: 50px;
   color: #fa7855;
   font-weight: bold;
 
+}
+.surf{
+margin:20px 0 0 0;
 }
 
 .menu-list > li{
   display: inline-block;
 
 }
-
-
 .menu-list > li > a{
   display: block;
-  padding: 15px 30px 1px 30px;
+  padding: 15px 30px 0 30px;
   color:#696969;
   font-variant: small-caps;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
+  
+}
+
+.fa-caret-down{
+  padding-left: 10px;
+  font-size: 14px;
 }
 .menu-list > li.home > a{
 
@@ -78,7 +86,7 @@ header{
 .meals-list{
   position: absolute;
   background: white;
-  padding: 5px 20px 10px;
+  padding: 5px 25px 15px;
   font-variant: normal;
   display: block;
   visibility: hidden;
@@ -97,11 +105,7 @@ opacity: 1 ;
   transition: all 0.3s;
 
 }
-span i{
-  padding-left:8px;
-  font-size: 14px;
-  
-}
+
 .carrousel, content{
   width:100% ;
   display: flex;
@@ -114,10 +118,12 @@ span i{
   }
   .carrousel-item1, .carrousel-item2, .carrousel-item3, .carrousel-item4{
    width: 24%;
-    margin: 0 0,5%;
+   margin:0;
+    
   }
   .carrousel img{
       width:100% ;
+      margin: 0;
   }
   .carrousel-item4, .carrousel-item3{
     position: relative;
@@ -131,13 +137,14 @@ span i{
     background-color:#fa7855 ;
     opacity: 0.5;
    transition: all 0.3s;
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
+    font-size: 16px;
     padding: 20px 10px ;
     bottom:-50%;
     overflow: hidden;
     font-variant: small-caps;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
   }
    
   .carrousel-item3 .caption{
