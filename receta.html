@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="text/css" rel="stylesheet" href="styles/styles-receta.css">
+    <link href="styles/styles-receta.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Mi blog de cocina</title>
-  </head>
-  <body>
+    <title>Receta</title>
+</head>
+<body>
     <section class="home-section">
-      <header>
-        <a class="main-title" href="#">Mi blog de cocina</a>
-        <nav class="surf">
-          <ul class="menu-list">
-            <li class="home"> <a href="index.html"> home </a> </li>
-            <li class="meals"><a href="#">platos<span><i class="fas fa-caret-down"></i></span></a>
-              <ul class="meals-list">
-                  <li><a href="recipe-title">Pionono</a></li>
-                  <li><a href="#">Carnes</a></li>
-                  <li><a href="#">Postres</a></li>
-                </ul>
-           </li>
-            <li> <a href="index.html"> sobre mi </a></li>
-            <li> <a href="index.html"> contactos</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="banner"></div>
+        <header>
+            <a class="main-title" href="index.html">Mi blog de cocina</a>
+        </header>
+        <div class="menu">
+                <input id="toggle" type="checkbox"/>
+                <label for="toggle" class="drop">
+                    <i class="fas fa-bars"><a class="menu-dropdown">MENU</a></i>
+                </label>
+                <nav> 
+                <ul class="menu-list">
+                    <li class="home"> <a href="index.html">HOME</a> </li>
+                    <li class="meals"><a href="#">PLATOS<i class="fas fa-caret-down"></i></a>
+                        <ul class="meals-list">
+                            <li><a href="#">Pionono</a></li>
+                            <li><a href="#">Carnes</a></li>
+                            <li><a href="#">Postres</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#">SOBRE MÍ </a></li>
+                    <li> <a href="#">CONTACTO</a></li>
+                    </ul>
+                </nav> 
+        <div>
+            <img src="images/banner.jpg" class="banner">
+        </div>
+    </section>    
     <section class="container">
         <div class="singlepost-menu">
             <a class="bold-link" href="index.html">
@@ -52,7 +60,7 @@
         </div>
         <div class="recipe">
             <div class="recipe-post">
-            <img class="recipe-image" src="images/recetas.JPG">
+            <a href="index.html"><img class="recipe-image" src="images/recetas.JPG"></a>
               <div class="recipe-intro">
                 <p>By María | Mayo 19, 2017</p>
                 <a href="" ><i class="fas fa-share-alt"></i></a>
@@ -88,7 +96,11 @@
             <a href=""><i class="fab fa-linkedin"></i><span>LINKEDIN</span></a>
             <a href=""><i class="fab fa-instagram"></i><span>INSTAGRAM</span></a>
             <a href=""><i class="fab fa-youtube"></i><span>YOUTUBE</span></a>
+            <div class="arrow">
+                <a href=""><i class="fas fa-arrow-up"></i></a>
+            </div>
         </div>
+        
     </section>   
 </body>
 </html>
