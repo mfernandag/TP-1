@@ -4,7 +4,11 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
+<<<<<<< HEAD
 dl, dt, dd, ol, ul, li,
+=======
+dl, dt, dd, ol, li, ul,
+>>>>>>> 7ffcc5dfd5d0d204dcd4dcb9e48975afa7f311fb
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -16,6 +20,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+<<<<<<< HEAD
   vertical-align: baseline;
   list-style: none;
   text-decoration: none;
@@ -101,3 +106,230 @@ div.banner{
 	background-size:cover;
 
 }
+=======
+   vertical-align: baseline;
+   list-style: none;
+   text-decoration: none
+}
+
+body{
+	font-family: "IBM Plex Mono", monospace;
+	font-size: 14px;
+	color: #848081;
+}
+
+/*menu izquierda receta*/
+
+.container{
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 1000px;
+}
+
+.singlepost-menu{
+	padding-top: 20px; 
+	padding-bottom: 70px;
+}
+
+
+.singlepost-menu i, a, .left-menu{
+	color: black;
+	
+}
+
+.singlepost-menu a, .left-menu, .span-menu{
+	font-weight: bold;	
+}
+
+.post-name{
+	font-weight: normal;
+	color: #848081;
+}
+
+.singlepost-menu .bold-link:hover>i, .left-menu:hover, .bold-link:hover{
+	color: #FC774E;
+}
+
+/*receta*/
+
+.recipe-page{
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 600px;
+	display: flex;
+	flex-direction: row;
+}
+
+.socialmedia-icons{
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+	font-size: 18px;
+	justify-content: center;
+	max-height: 320px;
+}
+
+.socialmedia-icons a{
+	color: white;
+	border-radius: 100%;
+	text-align: center;
+	width: 15px;
+	height: 15px;
+	padding: 5px;
+	margin-bottom: 15px;
+	line-height: 15px;
+}
+
+
+.facebook{
+	background-color: #3b5998;
+}
+
+.twitter{
+	background-color: #00aced;
+}
+
+.google{
+	background-color: #d34836;
+}
+
+.instagram{
+	background-color: #8F6247; 
+}
+
+.pinterest{
+	background-color: #c8232c;
+}
+
+.recipe-image{
+	width: 500px;
+	height: 320px;
+	border-radius: 25px;
+}
+
+.recipe{
+	font-size: 12px;
+	margin-bottom: 40px;
+}
+
+.recipe-post{
+	max-width: 500px;
+}
+
+.recipe-intro{
+	margin-top: 25px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.recipe-intro p{
+	display: inline-block;
+}
+
+.recipe-intro a{
+	float: right;
+	text-align: center;
+	color: #959595;
+}
+
+.recipe-intro a i{
+	margin-left: 10px;
+}
+
+.recipe-title{
+	margin-left: 8px;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+}
+
+.recipe-text{
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+blockquote {
+	border-left: 1px solid #FC774E;
+	margin-bottom: 20px;
+}
+
+blockquote p, cite{
+	padding-left: 15px;
+}
+
+blockquote p{
+	font-weight: bold;
+	color: black;
+	padding-bottom: 20px;
+}
+
+blockquote cite{
+	display: block;
+}
+
+.ingredients-list{
+	padding: 0;
+}
+
+.ingredients-list li{
+	line-height: 22px;
+}
+
+.ingredients-list li::before{
+	content: "\2022";
+	color: #FC774E;
+	font-weight: bold;
+	display: inline-block;
+	width: 5px;
+	margin-right: 10px;
+}
+
+.socialmedia-icons a:hover{
+	width: 17px;
+	height: 17px;
+	padding: 7px;
+	margin-bottom: 17px;
+	line-height: 17px;
+}
+
+.fa-heart:hover{
+	color: #cc0000;
+	font-weight: bold;
+}
+
+.fa-comments:hover{
+	color: #000099;
+	font-weight: bold;
+}
+
+.fa-share-alt:hover{
+	color: black;
+}
+
+/*social media footer */
+
+.socialmedia-footer{
+	margin-top: 50px;
+	border-bottom: 1px solid #d8d8d8;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+	padding-bottom: 40px;
+	font-size: 12px;
+	align-items: center;
+}
+
+.socialmedia-footer a{
+	color: #808080;
+}
+
+.socialmedia-footer a span{
+	margin-left: 10px;
+}
+
+.socialmedia-footer a:hover{
+	color: #4c4c4c;
+	font-weight: bold;
+	font-size: 14px;
+}
+>>>>>>> 7ffcc5dfd5d0d204dcd4dcb9e48975afa7f311fb
