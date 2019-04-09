@@ -4,7 +4,6 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
 dl, dt, dd, ol, li, ul,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -19,97 +18,107 @@ time, mark, audio, video {
 	font: inherit;
   vertical-align: baseline;
   list-style: none;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-
+  text-decoration: none
 }
+
 body{
-  background-color: white;
-  font-family:"IBM Plex Mono", monospace;
-  font-size: 14px;
+	font-family: "IBM Plex Mono", monospace;
+	font-size: 16px;
 	color: #848081;
 }
 
 header{
-  margin: 50px 0 5px;
-  width: 100%;
-  text-align: center;
-
+	margin: 20px 0 12px;
+	width: 100%;
+	text-align: center;
 }
+
+.menu-list{
+	text-align: center;
+}
+
 .main-title{
-  font-family: "Indie Flower", cursive;
-  font-size: 40px;
-  color:#fa7855;
-  font-weight: bold;
-
+	font-family: "Indie Flower", cursive;
+	font-size: 50px;
+	color:#fa7855;
+	font-weight: bold;
 }
+
 .menu-list > li{
-display: inline-block;
-
+  display: inline-block;
 }
-
+  
 .menu-list > li > a{
-  display: block;
-  padding: 15px 30px 0 30px;
-  color:#696969;
-  font-variant: small-caps;
-  font-weight: bold;
-  font-size: 20px;
+	display: block;
+	padding: 15px 30px 0 30px;
+	color:#696969;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 16px;
 }
+
+.fa-caret-down{
+	padding-left: 10px;
+}
+
 .menu-list > li.home > a{
-
-  color: #fa7855;
+	color: #fa7855;
 }
-
-.menu-list > li.home > a:hover{ 
-
-  color:#696969;
+  
+.menu-list > li.home > a:hover{
+	color:#696969;
 }
-    
+	  
 .menu-list > li > a:hover{ 
-  color:#fa7855;
-  transition: all 0.3s;
+	color:#fa7855;
+	transition: all 0.3s;
+}
+  
+.menu-list > li.meals > a {
+	position: relative;
 }
 
-.menu-list > li.meals > a{
-  position: relative;
-}
 .meals-list{
-  position: absolute;
-  background: white;
-  padding: 5px 20px 10px;
-  font-variant: normal;
-  display: block;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1.5s;
+	position: absolute;
+	background: white;
+	padding: 5px 10px;
+	font-variant: normal;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	line-height: 25px;
+	width: 120px;
 }
+
 .menu-list li:hover .meals-list{
-visibility: visible;
-opacity: 1 ;
+  visibility: visible;
+  opacity: 1 ;
 }
+
 .meals-list > li > a{
-  color:#696969;
+	color:#696969;
 }
+
 .meals-list > li > a:hover{
-  color: #fa7855;
-  transition: all 0.3s;
+	color: #fa7855;
+	transition: all 0.3s;
 }
-div.banner{
+
+.banner{
 	display:block;
-	width:100%;
-	height:250px;
-	background: url("../images/banner.jpg") no-repeat center bottom;
-	background-size:cover;
+	width: 100%;
+	height: auto;
 }
-.menu-list .meals span i{
-	padding-left:8px;
-	font-size: 14px;
-	
-  }
-/*menu izquierda receta*/
+
+label{
+	margin-top: 60px;
+	background-color: #fa7855;
+	color: white;
+	padding: 10px 100px;
+	border-radius: 10px;
+	display: none;
+}
 
 .container{
 	margin: 0 auto;
@@ -122,10 +131,8 @@ div.banner{
 	padding-bottom: 70px;
 }
 
-
 .singlepost-menu i, a, .left-menu{
 	color: black;
-	
 }
 
 .singlepost-menu a, .left-menu, .span-menu{
@@ -171,7 +178,6 @@ div.banner{
 	line-height: 15px;
 }
 
-
 .facebook{
 	background-color: #3b5998;
 }
@@ -199,7 +205,7 @@ div.banner{
 }
 
 .recipe{
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 40px;
 }
 
@@ -229,7 +235,7 @@ div.banner{
 
 .recipe-title{
 	margin-left: 8px;
-	font-size: 16px;
+	font-size: 18px;
 	color: black;
 	font-weight: bold;
 }
@@ -281,6 +287,7 @@ blockquote cite{
 	padding: 7px;
 	margin-bottom: 17px;
 	line-height: 17px;
+	transition: all 0.3s
 }
 
 .fa-heart:hover{
@@ -299,15 +306,15 @@ blockquote cite{
 
 /*social media footer */
 
-.socialmedia-footer{
+div.socialmedia-footer{
 	margin-top: 50px;
 	border-bottom: 1px solid #d8d8d8;
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 50px;
 	padding-bottom: 40px;
-	font-size: 12px;
 	align-items: center;
+	position: relative;
 }
 
 .socialmedia-footer a{
@@ -318,8 +325,29 @@ blockquote cite{
 	margin-left: 10px;
 }
 
+.arrow .fa-arrow-up{
+  display: none;
+	background-color: #FC774E;
+	color: white;
+	font-size: 20px;
+	padding: 5px 8px;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	line-height: 26px;
+	left: 0;
+	right: 0;
+	bottom: -30%;
+    margin-left: auto;
+	margin-right: auto;
+	width: 22px;
+}
+
 .socialmedia-footer a:hover{
 	color: #4c4c4c;
 	font-weight: bold;
 	font-size: 14px;
 }
+
+
+
