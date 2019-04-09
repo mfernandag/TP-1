@@ -4,11 +4,8 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-<<<<<<< HEAD
 dl, dt, dd, ol, ul, li,
-=======
 dl, dt, dd, ol, li, ul,
->>>>>>> 7ffcc5dfd5d0d204dcd4dcb9e48975afa7f311fb
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -20,7 +17,6 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-<<<<<<< HEAD
   vertical-align: baseline;
   list-style: none;
   text-decoration: none;
@@ -32,7 +28,10 @@ time, mark, audio, video {
 body{
   background-color: white;
   font-family:"IBM Plex Mono", monospace;
+  font-size: 14px;
+	color: #848081;
 }
+
 header{
   margin: 50px 0 5px;
   width: 100%;
@@ -41,7 +40,7 @@ header{
 }
 .main-title{
   font-family: "Indie Flower", cursive;
-  font-size: 50px;
+  font-size: 40px;
   color:#fa7855;
   font-weight: bold;
 
@@ -80,7 +79,7 @@ display: inline-block;
 .meals-list{
   position: absolute;
   background: white;
-  padding: 5px 10px;
+  padding: 5px 20px 10px;
   font-variant: normal;
   display: block;
   visibility: hidden;
@@ -104,20 +103,12 @@ div.banner{
 	height:250px;
 	background: url("../images/banner.jpg") no-repeat center bottom;
 	background-size:cover;
-
 }
-=======
-   vertical-align: baseline;
-   list-style: none;
-   text-decoration: none
-}
-
-body{
-	font-family: "IBM Plex Mono", monospace;
+.menu-list .meals span i{
+	padding-left:8px;
 	font-size: 14px;
-	color: #848081;
-}
-
+	
+  }
 /*menu izquierda receta*/
 
 .container{
@@ -332,4 +323,3 @@ blockquote cite{
 	font-weight: bold;
 	font-size: 14px;
 }
->>>>>>> 7ffcc5dfd5d0d204dcd4dcb9e48975afa7f311fb
