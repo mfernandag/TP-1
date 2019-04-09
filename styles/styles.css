@@ -16,7 +16,6 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-<<<<<<< HEAD
   vertical-align: baseline;
   list-style: none;
   text-decoration: none;
@@ -79,7 +78,7 @@ header{
 .meals-list{
   position: absolute;
   background: white;
-  padding: 5px 10px 10px;
+  padding: 5px 20px 10px;
   font-variant: normal;
   display: block;
   visibility: hidden;
@@ -103,7 +102,7 @@ span i{
   font-size: 14px;
   
 }
-.carrousel, .content{
+.carrousel, content{
   width:100% ;
   display: flex;
   flex-direction: row;
@@ -166,7 +165,7 @@ span i{
   }
   
   .content{
-    width: 80%;
+    max-width: 900px;
     margin: 40px auto;
     
   }
@@ -175,16 +174,16 @@ span i{
     width:100%;
     overflow: hidden;
     }
-  .content-item1, .content-item2, .content-item3{
+  .content-image1, .content-image2, .content-image3{
     max-width: 32%;
     visibility: visible;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+     display: inline-block;
+    
+    
     
     }
-    .content-item1:hover, .content-item2:hover, .content-item3:hover{
+    .content-image1:hover, .content-image2:hover, .content-image3:hover{
       visibility: hidden;
       transition: all 0.3s;
     }
@@ -200,27 +199,14 @@ span i{
     font-size: 16px;
     justify-content: center;
     visibility: visible;
-    margin-inline-start:25%;
     width:50%;
+    margin:-38% 25%;
+    align-items: center;
   }
   .content a.button:hover{
     background-color:#fa7855;
     transition: all 0.3s;
   }
-  
-  
-  
-  
-=======
-    vertical-align: baseline;
-    list-style: none;
-    text-decoration: none
-}
-
-body{
-	font-family: "IBM Plex Mono", monospace;
-}
-
 
 /*DESDE VIDEO*/
 
@@ -380,7 +366,7 @@ aside p{
 }
 /*sección social media*/
 
-.socialmedia-footer{
+#socialmedia-footer{
 	margin-top: 50px;
 	border-bottom: 1px solid #d8d8d8;
 	display: flex;
@@ -391,17 +377,16 @@ aside p{
 	align-items: center;
 }
 
-.socialmedia-footer a{
+#socialmedia-footer a{
 	color: #808080;
 }
 
-.socialmedia-footer a span{
+#socialmedia-footer a span{
 	margin-left: 10px;
 }
 
-.socialmedia-footer a:hover{
+#socialmedia-footer a:hover{
 	color: #4c4c4c;
 	font-weight: bold;
 	font-size: 14px;
 }
->>>>>>> 7ffcc5dfd5d0d204dcd4dcb9e48975afa7f311fb
