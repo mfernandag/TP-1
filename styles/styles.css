@@ -31,7 +31,7 @@ body{
 }
 
 header{
-  margin:20px 0 0;
+  margin:40px 0 0;
   width: 100%;
   text-align: center;
   height: auto;
@@ -42,23 +42,50 @@ header{
   font-size: 50px;
   color: #fa7855;
   font-weight: bold;
+  margin-top:40px;
 
 }
-.surf{
-margin:20px 0 0 0;
+nav.surf{
+  margin:0;
+}
+  .menu{
+  margin: 5px auto 10px;
+  padding:2px 100px;
+  border-radius:16px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fa7855;
+  width:80%;
+  color:white;
+  display:block;
+  visibility:hidden;
+  }
+.span.fa-bars{
+  display:inline;
+  font-size:14px;
+  text-align:left;
+  padding-right:10px;
+}
+  
+.menu:hover{
+  background-color: #FF4500;
+  transition: all 0.3s;
+
 }
 
 .menu-list > li{
   display: inline-block;
+  
 
 }
 .menu-list > li > a{
   display: block;
-  padding: 15px 30px 0 30px;
+  padding: 0px 30px;
   color:#696969;
   font-variant: small-caps;
   font-weight: bold;
   font-size: 24px;
+  margin:0; 
   
 }
 
@@ -178,7 +205,7 @@ opacity: 1 ;
   
   .content{
     max-width:900px;
-    margin: 40px auto;
+    margin: 30px auto;
     
   }
   .content img{
@@ -243,6 +270,7 @@ iframe{
   padding-bottom: 35px;
   float: right;
   margin-right: 15px;
+  
   }
 
 .content-bio .aboutme{
@@ -314,7 +342,7 @@ aside p{
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 25px 0;
-	max-width:65%
+	max-width:65%;
 }
 
 .recipe{
@@ -373,7 +401,7 @@ aside p{
 	margin-bottom: 50px;
 	padding-bottom: 40px;
 	font-size: 12px;
-  align-items:left;
+  align-items:center;
   
 }
 
@@ -389,4 +417,140 @@ aside p{
 	color: #4c4c4c;
 	font-weight: bold;
 	font-size: 14px;
+}
+@media only screen and (max-width:900px){
+  .carrousel-item3{
+    display:none;
+  }
+  .carrousel-item1, .carrousel-item2, .carrousel-item4{
+   width:32%;
+  }
+  .menu-list > li > a{
+    padding: 15px 15px 0 15px;
+    font-size: 22px;
+  }
+  .meals-list{
+      padding: 5px 10px;
+    }
+      .main-title{
+       
+       margin-top:70px;
+     
+     }   
+        
+  }
+
+@media only screen and (max-width:700px){
+
+  .carrousel-item2,.carrousel-item3{
+
+  display:none;
+  }
+  .carrousel-item1,.carrousel-item4{
+
+    width: 48%;
+  }
+  .carrousel-item4 .caption{
+    font-size:100%;
+  }
+  .content-image3{
+    display:none;
+  }
+  .content-image1,.content-image2{
+    max-width:48%;  
+  }
+  .content-image2{
+    margin-right:0px;
+  }
+  
+  img.profile-pic{
+  height: 135px;
+	width: 135px;
+  }
+  .index-recipe{
+  max-width: 90%;
+  margin-left:5%;
+  margin-right:5%;
+  }
+  #socialmedia-footer span{
+  display: none;  
+  }
+  #socialmedia-footer{
+  margin-left:5%;
+  margin-right:5%;
+}
+}
+@media only screen and (max-width:560px){
+  .main-title{
+   font-size: 40px;
+   margin-top:20px;
+  }
+.menu-list > li{
+  display:none;
+}
+.menu{
+  visibility: visible;
+}
+
+ .carrousel-item4 .caption p.date{
+ display:none;
+}
+
+div.content-video{
+  display:none;
+}
+.content-bio{
+  display:block;
+  float:none;
+  width: 90%;
+  margin:0 auto;
+}
+aside p{
+	font-size: 16px;
+  }
+.img.profile-pic{
+  height: 170px;
+	width: 170px;
+  }
+  .index-recipe{
+  display: block;
+  max-width:70% ;
+  margin:0 auto;
+
+
+}
+.recipe{
+  max-width:90% ;
+  margin:0 auto;
+  margin-left:0;
+}
+.content-bio{
+  padding-bottom:5px;
+}
+}
+
+@media only screen and (max-width:420px){
+  header{
+    margin:10px;
+  }
+  .main-title{
+    margin-top:20px;
+  }
+  .carrousel-item4{
+    display:none;
+  }
+  .carrousel-item1{
+   width:100% ;
+  }
+  .menu{
+  font-size:12px;
+  display:inline-block;
+  height:20px;
+  text-align:center;
+}
+.content-image1,.content-image2{
+  display:block;
+  max-width:90%;
+  margin:0 auto;
+}
 }
