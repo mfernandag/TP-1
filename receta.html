@@ -13,8 +13,14 @@
 <body>
     <section class="home-section">
         <header>
-            <a class="main-title" href="#">Mi blog de cocina</a>
-            <nav class="surf">
+            <a class="main-title" href="index.html">Mi blog de cocina</a>
+        </header>
+        <div class="menu">
+                <input id="toggle" type="checkbox"/>
+                <label for="toggle" class="drop">
+                    <i class="fas fa-bars"><a class="menu-dropdown">MENU</a></i>
+                </label>
+                <nav> 
                 <ul class="menu-list">
                     <li class="home"> <a href="index.html">HOME</a> </li>
                     <li class="meals"><a href="#">PLATOS<i class="fas fa-caret-down"></i></a>
@@ -27,9 +33,10 @@
                     <li> <a href="#">SOBRE MÍ </a></li>
                     <li> <a href="#">CONTACTO</a></li>
                     </ul>
-            </nav>
-        </header>
-        <div class="banner"></div>
+                </nav> 
+        <div>
+            <img src="images/banner.jpg" class="banner">
+        </div>
     </section>    
     <section class="container">
         <div class="singlepost-menu">
@@ -53,7 +60,7 @@
         </div>
         <div class="recipe">
             <div class="recipe-post">
-            <img class="recipe-image" src="images/recetas.JPG">
+            <a href="index.html"><img class="recipe-image" src="images/recetas.JPG"></a>
               <div class="recipe-intro">
                 <p>By María | Mayo 19, 2017</p>
                 <a href="" ><i class="fas fa-share-alt"></i></a>
@@ -89,7 +96,12 @@
             <a href=""><i class="fab fa-linkedin"></i><span>LINKEDIN</span></a>
             <a href=""><i class="fab fa-instagram"></i><span>INSTAGRAM</span></a>
             <a href=""><i class="fab fa-youtube"></i><span>YOUTUBE</span></a>
+            <div class="arrow">
+                <a href=""><i class="fas fa-arrow-up"></i></a>
+            </div>
         </div>
+        
+        
     </section>   
 </body>
 </html>
