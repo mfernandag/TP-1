@@ -33,6 +33,35 @@ header{
 	text-align: center;
 }
 
+.surf{
+	margin:20px 0 0 0;
+}
+
+.menu{
+	margin: 10px auto 20px;
+	padding: 8px 100px;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #fa7855;
+	width: 30%;
+	color:white;
+	display:block;
+	display: none;
+}
+
+.span.fa-bars{
+	display:inline;
+	font-size:14px;
+	text-align:left;
+	padding-right:10px;
+}
+   
+.menu:hover{
+	background-color: #FF4500;
+	transition: all 0.3s;
+}
+
 .menu-list{
 	text-align: center;
 }
@@ -365,7 +394,10 @@ div.arrow{
 
 @media only screen and (max-width: 560px){
 	.menu-list{
-		visibility: hidden;
+		display: none;
+	}
+	.menu{
+		display: block;
 	}
 }
 
@@ -374,6 +406,10 @@ div.arrow{
 		display: block;
 		padding: 0px 40px;
 		text-align: center;
+	}
+	.menu{
+		display:block;
+		text-align:center;
 	}	
 	.banner img{
 		width: 100%;
