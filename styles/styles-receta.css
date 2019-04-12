@@ -33,6 +33,35 @@ header{
 	text-align: center;
 }
 
+.surf{
+	margin:20px 0 0 0;
+}
+
+.menu{
+	margin: 10px auto 20px;
+	padding: 8px 100px;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #fa7855;
+	width: 30%;
+	color:white;
+	display:block;
+	display: none;
+}
+
+.span.fa-bars{
+	display:inline;
+	font-size:14px;
+	text-align:left;
+	padding-right:10px;
+}
+   
+.menu:hover{
+	background-color: #FF4500;
+	transition: all 0.3s;
+}
+
 .menu-list{
 	text-align: center;
 }
@@ -111,15 +140,6 @@ header{
 	height: auto;
 }
 
-label{
-	margin-top: 60px;
-	background-color: #fa7855;
-	color: white;
-	padding: 10px 100px;
-	border-radius: 10px;
-	display: none;
-}
-
 .container{
 	margin: 0 auto;
 	overflow: hidden;
@@ -147,8 +167,6 @@ label{
 .singlepost-menu .bold-link:hover>i, .left-menu:hover, .bold-link:hover{
 	color: #FC774E;
 }
-
-/*receta*/
 
 .recipe-page{
 	margin: 0 auto;
@@ -287,7 +305,7 @@ blockquote cite{
 	padding: 7px;
 	margin-bottom: 17px;
 	line-height: 17px;
-	transition: all 0.3s
+	transition: all 0.3s;
 }
 
 .fa-heart:hover{
@@ -303,8 +321,6 @@ blockquote cite{
 .fa-share-alt:hover{
 	color: black;
 }
-
-/*social media footer */
 
 div.socialmedia-footer{
 	margin-top: 50px;
@@ -325,6 +341,13 @@ div.socialmedia-footer{
 	margin-left: 10px;
 }
 
+.socialmedia-footer a:hover{
+	color: #4c4c4c;
+	font-weight: bold;
+	font-size: 14px;
+	transition: all 0.3s;
+}
+
 .arrow .fa-arrow-up{
   display: none;
 	background-color: #FC774E;
@@ -338,16 +361,95 @@ div.socialmedia-footer{
 	left: 0;
 	right: 0;
 	bottom: -30%;
-    margin-left: auto;
+  margin-left: auto;
 	margin-right: auto;
 	width: 22px;
 }
 
-.socialmedia-footer a:hover{
-	color: #4c4c4c;
-	font-weight: bold;
-	font-size: 14px;
+div.arrow{
+	display: none;
 }
 
+@media only screen and (max-width: 700px){
+	.socialmedia-footer span{
+		display: none;		
+	}
+	.arrow .fa-arrow-up{
+		display: inline-block;
+	}
+	.singlepost-menu{
+		padding-left: 20px;
+	}
+	.socialmedia-icons{
+		margin-left: 20px;
+	}
+	.recipe-image{
+		width: 100%;
+		height: auto;
+	}
+	.recipe-post{
+		padding-right: 15px;
+	}
+}
 
+@media only screen and (max-width: 560px){
+	.menu-list{
+		display: none;
+	}
+	.menu{
+		display: block;
+	}
+}
 
+@media only screen and (max-width: 420px){
+	.main-title{
+		display: block;
+		padding: 0px 40px;
+		text-align: center;
+	}
+	.menu{
+		display:block;
+		text-align:center;
+	}	
+	.banner img{
+		width: 100%;
+		height: auto;
+	}
+	.singlepost-menu{
+		padding-left: 20px;
+		padding-right: 180px;
+		line-height: 30px;
+		padding-bottom: 25px;
+	}
+	.recipe-page{
+		flex-direction: column;
+	}
+	.socialmedia-icons{
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+  .socialmedia-icons a{
+		width: 20px;
+    height: 20px;
+    padding: 10px;
+		line-height: 20px;
+		margin-bottom: 30px;
+	}
+	.recipe-image{
+		width: 100%;
+		height: auto;
+	}
+	.recipe-post{
+		padding: 0px 15px;
+	}
+	.socialmedia-fotter{
+		margin-top: 10px;
+		border-bottom: none;
+	}
+	.socialmedia-footer span{
+		display: none;		
+	}
+	div.arrow, .fa-arrow-up{
+		display: inline-block;
+	}
+}
